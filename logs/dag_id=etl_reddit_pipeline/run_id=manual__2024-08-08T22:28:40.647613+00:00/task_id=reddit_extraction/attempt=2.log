@@ -1,0 +1,42 @@
+[2024-08-08T22:29:56.861+0000] {local_task_job_runner.py:120} INFO - ::group::Pre task execution logs
+[2024-08-08T22:29:56.883+0000] {taskinstance.py:2076} INFO - Dependencies all met for dep_context=non-requeueable deps ti=<TaskInstance: etl_reddit_pipeline.reddit_extraction manual__2024-08-08T22:28:40.647613+00:00 [queued]>
+[2024-08-08T22:29:56.887+0000] {taskinstance.py:2076} INFO - Dependencies all met for dep_context=requeueable deps ti=<TaskInstance: etl_reddit_pipeline.reddit_extraction manual__2024-08-08T22:28:40.647613+00:00 [queued]>
+[2024-08-08T22:29:56.887+0000] {taskinstance.py:2306} INFO - Starting attempt 2 of 2
+[2024-08-08T22:29:56.895+0000] {taskinstance.py:2330} INFO - Executing <Task(PythonOperator): reddit_extraction> on 2024-08-08 22:28:40.647613+00:00
+[2024-08-08T22:29:56.903+0000] {standard_task_runner.py:64} INFO - Started process 55 to run task
+[2024-08-08T22:29:56.905+0000] {standard_task_runner.py:90} INFO - Running: ['airflow', 'tasks', 'run', 'etl_reddit_pipeline', 'reddit_extraction', 'manual__2024-08-08T22:28:40.647613+00:00', '--job-id', '25', '--raw', '--subdir', 'DAGS_FOLDER/reddit_dag.py', '--cfg-path', '/tmp/tmpf497ozc2']
+[2024-08-08T22:29:56.908+0000] {standard_task_runner.py:91} INFO - Job 25: Subtask reddit_extraction
+[2024-08-08T22:29:56.937+0000] {task_command.py:426} INFO - Running <TaskInstance: etl_reddit_pipeline.reddit_extraction manual__2024-08-08T22:28:40.647613+00:00 [running]> on host 172cf4fb9077
+[2024-08-08T22:29:56.996+0000] {taskinstance.py:2648} INFO - Exporting env vars: AIRFLOW_CTX_DAG_OWNER='Varun MJ' AIRFLOW_CTX_DAG_ID='etl_reddit_pipeline' AIRFLOW_CTX_TASK_ID='reddit_extraction' AIRFLOW_CTX_EXECUTION_DATE='2024-08-08T22:28:40.647613+00:00' AIRFLOW_CTX_TRY_NUMBER='2' AIRFLOW_CTX_DAG_RUN_ID='manual__2024-08-08T22:28:40.647613+00:00'
+[2024-08-08T22:29:56.996+0000] {taskinstance.py:430} INFO - ::endgroup::
+[2024-08-08T22:29:57.007+0000] {logging_mixin.py:188} INFO - Connected to reddit!
+[2024-08-08T22:29:57.845+0000] {taskinstance.py:441} INFO - ::group::Post task execution logs
+[2024-08-08T22:29:57.846+0000] {taskinstance.py:2905} ERROR - Task failed with exception
+Traceback (most recent call last):
+  File "/home/airflow/.local/lib/python3.11/site-packages/airflow/models/taskinstance.py", line 465, in _execute_task
+    result = _execute_callable(context=context, **execute_callable_kwargs)
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/airflow/.local/lib/python3.11/site-packages/airflow/models/taskinstance.py", line 432, in _execute_callable
+    return execute_callable(context=context, **execute_callable_kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/airflow/.local/lib/python3.11/site-packages/airflow/models/baseoperator.py", line 401, in wrapper
+    return func(self, *args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/airflow/.local/lib/python3.11/site-packages/airflow/operators/python.py", line 235, in execute
+    return_value = self.execute_callable()
+                   ^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/airflow/.local/lib/python3.11/site-packages/airflow/operators/python.py", line 252, in execute_callable
+    return self.python_callable(*self.op_args, **self.op_kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/opt/airflow/pipelines/reddit_pipeline.py", line 16, in reddit_pipeline
+    post_df = transform_data(post_df)
+              ^^^^^^^^^^^^^^^^^^^^^^^
+  File "/opt/airflow/etls/reddit_etl.py", line 36, in transform_data
+    post_df['over_18'] = np.where((post_df['over_18'] == True), True, False)
+                         ^^
+NameError: name 'np' is not defined
+[2024-08-08T22:29:57.857+0000] {taskinstance.py:1206} INFO - Marking task as FAILED. dag_id=etl_reddit_pipeline, task_id=reddit_extraction, run_id=manual__2024-08-08T22:28:40.647613+00:00, execution_date=20240808T222840, start_date=20240808T222956, end_date=20240808T222957
+[2024-08-08T22:29:57.868+0000] {standard_task_runner.py:110} ERROR - Failed to execute job 25 for task reddit_extraction (name 'np' is not defined; 55)
+[2024-08-08T22:29:57.886+0000] {local_task_job_runner.py:243} INFO - Task exited with return code 1
+[2024-08-08T22:29:57.912+0000] {taskinstance.py:3503} INFO - 0 downstream tasks scheduled from follow-on schedule check
+[2024-08-08T22:29:57.913+0000] {local_task_job_runner.py:222} INFO - ::endgroup::

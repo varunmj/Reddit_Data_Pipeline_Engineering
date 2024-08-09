@@ -1,0 +1,292 @@
+id,title,score,num_comments,author,created_utc,upvote_ratio,url,over_18,edited,spoiler,stickied,selftext
+1en6uiw,The Job Description vs. The Job,232,28,SelectStarData,2024-08-08 14:04:54,0,https://v.redd.it/cofdka9z9ehd1,False,False,False,False,
+1en3oq2,How many rounds are too many for a Data Engineer role?,64,111,Greckol,2024-08-08 11:38:52,0,https://www.reddit.com/r/dataengineering/comments/1en3oq2/how_many_rounds_are_too_many_for_a_data_engineer/,False,False,False,False,"I'm in the process for a Tech Support Data Engineer role.  
+  
+1. Video Screening with HR Recruiter. - Done  
+2. TestGorilla Data Engineering Assessment: I will take a comprehensive assessment on TestGorilla that includes 10 different tests over a 2-hour period, where I must score over 75%.  
+3. Data Engineer Take-Home Assessment.  
+4. Panel Meeting: This involves two segments:  
+- SQL Technical Assessment: The first 30 minutes will be dedicated to evaluating my SQL skills through a technical assessment.  
+- Experience Discussion: The next 30 minutes will focus on discussing my past experiences, projects, and how they relate to the Data Engineer position.  
+5. SQL Assessment and Customer-Facing Problem: I will participate in an additional SQL assessment and solve a problem involving customer interactions with an overseas client.  
+6. Meeting with Hiring Manager: I will have a one-on-one meeting with the Hiring Manager, which will include behavioural questions.  
+7. Onsite Evaluation.  
+8. Final meeting with Overseas Client.
+
+EDIT: Pay is $53k. One of the benefits is that they also have a team of mental health specialists, similar to those in the Billions TV series. I will also be on probation for a month and will have two weeks of training."
+1enacru,"Why do teams avoid sharing ""raw"" data?",54,56,None,2024-08-08 16:25:17,0,https://www.reddit.com/r/dataengineering/comments/1enacru/why_do_teams_avoid_sharing_raw_data/,False,False,False,False,"Honest question here, I've seen time and time again a pattern where a centralized data store is added to ETL raw data and effectively prevent downstream users from accessing raw data.
+
+Invariably, mega tables with dozens or hundreds of columns are created and become a dependency of basically everything in the company.  Those tables are then either
+
+(1) Constantly in flux as everyone needs to touch it to fix things, causing errors across the company
+
+(2) Way too scary to touch, so bad patterns are never fixed
+
+Naively? I wonder if this could be avoided if instead each downstream team owns their own ETL logic over the raw outputs (read only copies / pubsub) of applications.
+
+Why is it so common to avoid sharing the more raw data?
+"
+1en2q3i,Data Engineer (Aws) but azure ?,21,14,Technical-Tap-5424,2024-08-08 10:43:20,0,https://www.reddit.com/r/dataengineering/comments/1en2q3i/data_engineer_aws_but_azure/,False,False,False,False,"I am a data engineer with 6 years of experience. Quiet proficient in langs like python,sql.
+
+When it comes to cloud platforms i have worked majorly in aws( athena glue emr lambda ec2 redshift s3 etc) and also on databricks ( aws as infra) and snowflake.
+
+During the last year or so or even more, i see companies hiring more for azure data engineers ! 
+
+From my understanding azure offers smooth integration with the microsoft world along with cheaper licensing maybe so companies use azure.
+
+From what i see :-
+Big company( allowing more freedom to developers) and midsize / startups- prefer more aws 
+
+Banks/ oil companies/ and other big players (IT companies) - would go for azure since majority of their work is on windows ( maybe? )
+
+8/10 jobs i apply to have the word (azure) before ‘data engineer’ and i do convey the fact that since basics of data engineering are the same i would be able to switch to the new cloud in no time but ultimately fail to get a job.
+
+I am not saying azure is the market leader but it looks like its the transition to cloud leader for quite sometime.
+
+I was quite confident of my aws skills but I recently i feel i should learn and build projects on azure so atleast i have something to convey or showcase but then i also think it wont make any difference as most of my official work is on aws and i am a mid level engineer.
+
+I in no way mean to compare the 2 cloud platforms, for me its merely a cloud provider but from what i see azure devops/ azure data engineer might be more in demand so that makes me want to think whether i should start upskilling on azure.
+
+Country of residence- Netherlands."
+1en3oty,Computing Option Greeks in real time using Pathway and Databento,13,1,LocksmithBest2231,2024-08-08 11:39:02,0,https://pathway.com/developers/templates/option-greeks,False,False,False,False,
+1enhqlb,Where should Data Build Tool (dbt) be used and why?,13,14,SAsad01,2024-08-08 21:22:27,0,https://www.reddit.com/r/dataengineering/comments/1enhqlb/where_should_data_build_tool_dbt_be_used_and_why/,False,False,False,False,"I have learned about dbt from a course and I know the basics of what it can do.
+
+I feel one thing I haven't been able to understand fully is why dbt is better than a small Python component in a data pipeline that uses Pandas etc. for performing transformations on data? I still struggle to answer this question.
+
+And a follow up to the main question is how to decide dbt is suitable or not for the task at hand?
+
+I have come across material that mentions the fact that dbt uses templating to create reusable and testable components, I need to understand how this ability is used in real projects, with some examples of the advantages it brings to the table.
+
+If there is good material articles videos etc that explain it or how have companies used it in their processes please link."
+1enbzb3,How do companies that deal with a large amount of excel spreatsheet data from various clients that have different standards for their data? Do they keep them as spreadsheets? Do they convert them into SQL databases or NoSQL databases?,10,28,WishIWasBronze,2024-08-08 17:29:54,0,https://www.reddit.com/r/dataengineering/comments/1enbzb3/how_do_companies_that_deal_with_a_large_amount_of/,False,False,False,False,"What tips would you give someone who starts out from scratch?
+
+Like we have clients who send their excel spreadsheets to us and our domain experts do stuff with ths data, and now I was hired as a data engineer to improve their process"
+1en8yrn,Lake (Structure) Design Patterns,10,3,PencilBoy99,2024-08-08 15:29:55,0,https://www.reddit.com/r/dataengineering/comments/1en8yrn/lake_structure_design_patterns/,False,False,False,False,"TLDR: where are the design/project patterns for lake(house)s?
+
+For OLTP, you have Normal Forms / ER. For traditional DW, you've got Star Schema. Both are very well documented and you can find lots of advice and design patterns for implementing either.
+
+For lake(like) technologies, you get the advice to have layers (the medallion architecture), but not much else (at least that I could find). You'd think there would be design patterns/approaches for this that are well documented, but it's hard to find (other than the ""have layers"" advice). 
+
+  
+Example (just off the top of my head).
+
+* If you're pre-joining data in the silver or gold tiers, how do you handle cartesian products? 
+* If data doesn't meet some quality requirement, what happens? Does it get marked in the target object somehow? Put in a separate structure?
+* What are the best practices for creating aggregates?
+* How do you handle master data that differs between sources?
+* What's the best business / project approach for designing/testing these? How should observability actually be implemented?
+
+Is there a book or course I just haven't seen?"
+1emzs08,Super unperformant join delta to delta,7,20,RexehBRS,2024-08-08 07:27:39,0,https://www.reddit.com/r/dataengineering/comments/1emzs08/super_unperformant_join_delta_to_delta/,False,False,False,False,"Hey all,
+
+Lurker and fairly new DE, absolutely loving it so far.
+
+I have a challenge which seems trivial yet don't understand what is going on here performance wise despite trying multiple things.
+
+Tech wise DBX 14.3
+
+I have a streaming delta, let's say this is a table with 8 columns and one column is a linking key string (24 char). The batch size of this would maybe be 30 records for argument sake. 
+
+I need to join this streaming table to a static data frame of ~1bn rows on this key. This dataframe has around 35 columns.
+
+The keyings are in the first 32 fields.
+
+Currently when trying to do left joins, when the source df is 80 rows or even 1 row the join never completes (have let it run hours with 3TB of write shuffle).
+
+This has confused me because ultimately at 1bn rows it seems a small problem.
+
+I have tried z indexing on the key field, this seemingly has no change. I have also tried a liquid clustering POC using deep clone and have same performance there. Both these scenarios I ran optimize and auto compact.
+
+It's almost like the execution plan doesn't care about these things existing.
+
+The only leading theory I have right now, is that no one has ever ran analyze table compute stats in our estate ever. All the documentation suggests you need to run this, at least after doing z ordering for example.
+
+Any help would be much appreciated! "
+1emvjvg,Looking for advice..,9,2,lilj8812,2024-08-08 03:15:17,1,https://www.reddit.com/r/dataengineering/comments/1emvjvg/looking_for_advice/,False,False,False,False,"Hi Friends!
+
+I have stumbled into an interesting situation. I recently started working for an outdoor activity company as a photographer. On my first day, the person training me was showing me how to copy and paste customers information into a spreadsheet lol. I told him I was just going to automate the task for us and so I did. The owner of the company heard about this and was STOKED. They essentially hunted me down in the office one day to tell me how happy they were with me and that they are very interested in getting me working on some more 'important' work.
+
+A couple weeks have gone by now and the owner and I had a chat. They let me know that they are very interested in keeping me on the team as we move into the off season and that they are aware that I am overqualified for my current role and ""seriously underpaid"" and so they told me to let them know my 'normal rate' as i start doing some data work for them. So, I have since been given admin privs to both of the companies CRM websites as well as root access to their server which leads me to some questions. I have essentially been given the green light to do whatever I want to help the company turn their data into actionable insight but I am not even sure where to begin.
+
+The company doesn't store any of their own information in a database, it's all stored on the CRM websites they use. So, my first thought was to set up their own database with their customer, trip, sales etc. data. But is this even necessary? I can access pretty much anything I would want to know about their customers through the CRM APIs. I guess I am just not used to having so much autonomy at a company and don't know where to begin on this data project that has absolutely no direction. I was wondering if y'all had any advice on projects I could start working on to demonstrate the potential value having a DE on their team could bring. I think another issue I am having is that the owner likes to rely on their 'gut instincts' and knows absolutely nothing about computers so it's hard to even have a meaningful conversation about data. 
+
+Ultimately, I am just looking for any advice or ideas yall have that I can start working on or pitch to the owner to help the company but also ensure some job security for myself. For what it's worth, I have about 3 years of DE experience where I mostly did ETL work. 
+
+TIA!"
+1en0d58,Modelling different date granularities ,6,4,DarthBallz999,2024-08-08 08:08:02,0,https://www.reddit.com/r/dataengineering/comments/1en0d58/modelling_different_date_granularities/,False,False,False,False,"Hey everyone, I typically haven’t had to work with different data sources supplying different date granularities. If you had sales data coming in from different sources at daily, weekly, monthly from different vendors how would you typically handle it in dimensional modelling? 
+
+(1) Would you allocate the higher granularity sources down to the daily level using a first day of the week, first day of month etc? So that all data is then at the lowest available granularity even if some of the data sources won’t be accurate at that granularity?
+
+(2) Or would you aggregate the lower granularity sources up to the highest granularity and lose the detail for some data sources?
+
+(3) or would you have multiple fact tables for daily, weekly, monthly etc. in this option would you still load all vendor data sources to all granularities to ensure all data is present at each level? 
+
+This would have powerbi sitting on top of it in case that is relevant.
+
+Cheers"
+1enaz06,How do you monitor data platforms you use in production?,5,8,Typical_Priority3319,2024-08-08 16:49:48,0,https://www.reddit.com/r/dataengineering/comments/1enaz06/how_do_you_monitor_data_platforms_you_use_in/,False,False,False,False,"I was thinking about how much data (logs, telemetry, etc.) gets generated by the systems that we use everyday to process the business data, and I started wondering what the best practices are for using/consuming this ""data platform metadata""
+
+The way I see it is you have a few diff categories: data quality checks after writes, system/cluster health and telemetry, billing, access logs. I feel like I'm not leveraging all of this stuff as much as I should.
+
+What tools do you use most often, and for what? i.e. Splunk, DataDog, Grafana etc... or if you're one of the unlucky people who is tasked with optimizing for cost on a platform like Snowflake or DataBricks, do you use any monitoring page they offer as part of the product ?"
+1encb2i,Extract values from Excel and PDF,3,3,avistafina,2024-08-08 17:42:54,0,https://www.reddit.com/r/dataengineering/comments/1encb2i/extract_values_from_excel_and_pdf/,False,False,False,False,"I have numerous Excel and PDF files on Google Drive containing T12 reports, all structured differently. The columns are named variably by different accountants. My task is to extract specific total values from these files, but the variables are located in various places and have different name variations, such as ""Cost of reconstruction,"" ""Cost of renovation,"" ""Total renovation,"" etc.
+
+I initially built logic to look for the keyword ""Total"" and matched it with the relevant row. However, I face numerous errors because the program can't find ""Total"" in some files, where it is named differently, like ""12 Trailing."" I constantly receive new files with more name variations for the same values.
+
+Is it possible to use machine learning or other tools to help automate this process? What kind of logic and methods should I use to effectively solve this problem?"
+1enamvd,Apache Iceberg event and workshop in Bay Area on Aug 15,5,0,royondata,2024-08-08 16:36:13,1,https://www.reddit.com/r/dataengineering/comments/1enamvd/apache_iceberg_event_and_workshop_in_bay_area_on/,False,False,False,False,"There is a Chill Data Summit event in San Carlos at Devil's Canyon Brewery on Aug 15 focused on teaching Apache Iceberg. Several committers and community experts will be attending. It's sponsored by Upsolver but there are no vendor talks, just tech talks from users and committers.
+
+Holden Karau, OSS engineer from Netflix will be leading the hands-on workshop.
+
+This is a really good opportunity to meet folks in the DE community and learn more about Apache Iceberg.
+
+Sign up [here](http://chilldatasummit.com/ontour/bayarea/Roy?utm_source=Reddit&utm_medium=Social&utm_campaign=Promo&utm_content=Register%20Now&utm_term=CDS%20Bay%20Area)
+
+Use code RDT50 for 50% off on the workshop."
+1emuoa6,Quries on Hybrid table on Apache Pinot,2,0,PlanktonRemarkable21,2024-08-08 02:31:42,0,https://www.reddit.com/r/dataengineering/comments/1emuoa6/quries_on_hybrid_table_on_apache_pinot/,False,False,False,False,"If I create a hybrid table on Apache Pinot from some mysql table. In which for realtime upsert table, I started a CDC connector which pushes data to Kafka, and pinot pulls data from it. For batch I pushed one time mysql dump to offline table. For realtime, upsert is working fine. It's returning a single record in case of duplicate id's. But if I am querying on hybrid table (OFFLINE + REALTIME), it's returning one record from Realtime and one from offline. If I am doing some aggreagtion also, it;s giving two result for same id, one from realtime and one from offline. I cannot create views on Pinot too. How to solve this ?"
+1en9tkh,Airflow help,3,1,Free-Way-5831,2024-08-08 16:03:54,0,https://www.reddit.com/r/dataengineering/comments/1en9tkh/airflow_help/,False,False,False,False,"Hello Everyone,
+
+I am new to Airflow and want to create a DAG to read a file in s3 with source path and destination path columns and trigger a glue job concurrently while passing the above values  as parameters. There are ideally two steps to it.
+
+Step 1 - Read data from s3, clean and pass it into an XComm
+
+Step 2 - Create a function to iterate over the parameters and create glue job based on the data from comms,
+
+The below code when inside a dag never triggers a Glue job. Can somebody help me with this
+
+with TaskGroup('glue\_jobs') as glue\_jobs\_group:
+
+def create\_glue\_jobs(ti):
+
+params\_list = ti.xcom\_pull(task\_ids='get\_params', key='return\_value')
+
+tasks = \[\]
+
+for i, params in enumerate(params\_list):
+
+src\_arg = params.get('src\_arg')
+
+dest\_arg = params.get('des\_arg')
+
+task\_id = f'Glue\_job\_{i}'
+
+glue\_job\_task = create\_glue\_job\_op(task\_id, src\_arg, dest\_arg) --> Returns a Glue Job          Operator
+
+tasks.append(glue\_job\_task)
+
+glue\_job\_task
+
+get\_params >> glue\_jobs\_group"
+1en97dt,How to rebuild Iceberg catalog from metadata layer on S3,3,5,georgegach,2024-08-08 15:39:19,0,https://www.reddit.com/r/dataengineering/comments/1en97dt/how_to_rebuild_iceberg_catalog_from_metadata/,False,False,False,False,"I'm playing with a proof-of-concept on-prem Lakehouse with off the shelf open-source tools. So far I've integrated Minio + Trino + Hive + Iceberg and it went smoothly. However I'm concerned that I was not able to find any resources about rebuilding catalog layer from metadatas residing on S3/Minio.
+
+This is a scenario for when Hive Metastore fails, or I want it swapped for anything else. Isn't Iceberg catalog supposed to be self-sufficient and auto-healing solely from storage layer?
+
+What am I missing guys?
+
+[https://iceberg.apache.org/spec/](https://iceberg.apache.org/spec/)
+
+https://preview.redd.it/ogknw8g9nghd1.png?width=1248&format=png&auto=webp&s=4545d7eac9475e54d09c4dc2b3c3abbd63055741
+
+
+
+  
+"
+1en1ur4,Bytebase 2.22.1 Released - Database Schema Change and Version Control for MySQL/PG/Oracle/MSSQL/Snowflake ...,5,0,Adela_freedom,2024-08-08 09:49:24,0,https://www.bytebase.com/changelog/bytebase-2-22-1/,False,False,False,False,
+1emy3xh,Deletion of past data from the Flink Dynamic Table,3,0,ApprehensiveUse3133,2024-08-08 05:39:24,0,https://www.reddit.com/r/dataengineering/comments/1emy3xh/deletion_of_past_data_from_the_flink_dynamic_table/,False,False,False,False,"I have access logs data of the users that keep on coming. Dailye we get near about 2 million access logs of the user. One user can access more than once also, so our problem statement is to keep the track of user access with entry\_time(first access in a day) and exit\_time(last access in a day). I have already prepared the flinkjob to do it which will calculate this information on runtime via streaming job.
+
+Just for the sale of understanding, this is data we will be calculating
+
+user\_name, location\_name, entry\_time, entry\_door, exit\_time, exit\_door, etc.
+
+By applying the aggregation on the current day data I can fetch the day wise user arrival information.
+
+But the problem is I want to delete the past day data from this flink dynamic table since past day records are not requried. And as I mentined, since we daily get 2 million records, so if we won't delete the past day records then data will keep on adding to this flink table and with time, process will keep on getting slower since data is increasing at rapid rate.
+
+So what to do to delete the past day data from the flink dynamic table since I only want to calculate the user arrival of the current day?
+
+FYI, I am getting this access logs data in the kafka, and from the kafka data I am applying the aggregation and then sending the aggregation data to another kafka, from there I am saving it to opensearch.
+
+I can share the code also if needed.
+
+Do let me know how to delete the past day data from the flink dynamic table
+
+I have tried with state TTL clear up, but it didn't help as I can see the past day data is still there."
+1eng4a0,Tabular model design,2,1,LankyOpportunity8363,2024-08-08 20:15:38,0,https://www.reddit.com/r/dataengineering/comments/1eng4a0/tabular_model_design/,False,False,False,False,"Hey everyone,
+I hope this is the right place to ask this question. 
+I have a tabular model currently deployed in PowerBi premium using the import mode design. The problem is that I have a large model +75GB so I'm always struggling with this and plus, capacities are too expensive to just keep on scaling it up. I was thinking of using directquery but I cannot set partitions, and almost all data is on one specific table, so whenever a user does something on the frontend the huge table is queried (select * from hugetable). How could I overcome this?
+Sorry if I'm not explaining myself well.
+Thanks"
+1enfpzs,Embeddings,2,2,patatalyfe,2024-08-08 19:59:47,0,https://www.reddit.com/r/dataengineering/comments/1enfpzs/embeddings/,False,False,False,False,"Hi all! I am researching how organizations use embeddings and vector-based search technologies. Is anyone’s organization currently utilizing these technologies? If so, I’d love to connect to discuss this further as I have some questions. 
+
+Cheers 
+"
+1enfloj,Looking for Resources to Start Learning Data Engineering from Scratch,2,6,Equivalent_Nerve_647,2024-08-08 19:54:54,0,https://www.reddit.com/r/dataengineering/comments/1enfloj/looking_for_resources_to_start_learning_data/,False,False,False,False,"Hello everyone, I'm curious about data engineering as a backend developer and computer science student. Are there any good resources to learn from scratch? Thanks a lot."
+1enezut,Realtime OLAP on GCP,2,1,Admirable_Hat_7871,2024-08-08 19:30:17,0,https://www.reddit.com/r/dataengineering/comments/1enezut/realtime_olap_on_gcp/,False,False,False,False,"Hi everyone! I was wondering whether anyone has experience with (near-)real time OLAP use cases on GCP, especially when the data is coming in via Pub/Sub.
+
+The idea is that it will power user facing dashboards (e.g. similar to Stripe Dashboard if you are familiar with it). Query response times should ideally be fast (<1sec) to give the user a great user experience. Newly arrived data should generally show up in the OLAP reports within minutes. 
+
+I’ve been looking into Apache Pinot, Apache Druid and ClickHouse, but none of them then seem to integrate well with Pub/Sub. Read that some set up Kafka between Pub/Sub and one of these databases, just to get it to work, though this feels like overkill. 
+
+Wondering whether anyone worked on something similar before and what kind of tooling you went with."
+1enejxb,Kafka connect SMT as a library ,2,1,No_Direction_5276,2024-08-08 19:12:01,0,https://www.reddit.com/r/dataengineering/comments/1enejxb/kafka_connect_smt_as_a_library/,False,False,False,False,Is there a library that offers a DSL like experience to define data transformations similar to Kafka connect SMT ?
+1enbhhh,Lakehouse layer approach,2,0,ltofanelli,2024-08-08 17:10:10,0,https://www.reddit.com/r/dataengineering/comments/1enbhhh/lakehouse_layer_approach/,False,False,False,False,"I would like to hear about your experiences regarding the transformation that occurs after ingesting raw data. What do you consider to be the most ""correct"" approach? What scenarios have you encountered problems with? What approaches do you prefer?
+
+Should you apply only what is necessary to process the data, such as filtering rows, handling nulls, etc.? Should you integrate tables to create a single source for consumption, or keep them separate by source?
+
+Regarding history:
+
+* Should you maintain history? If so, with or without SCD2 (Slowly Changing Dimension Type 2)?
+* Should you keep only the most current row (for dimensions and transactional data)? If so, if necessary, how should you reconstruct a table in the next layer without history?
+
+https://preview.redd.it/mtudsvro0hhd1.png?width=1523&format=png&auto=webp&s=c965c9df905ad09098d5fab92d313e846c67ef3b
+
+"
+1enbf9w,Some data storage questions with Bronze->Silver,2,1,Zeke_Grey,2024-08-08 17:07:34,0,https://www.reddit.com/r/dataengineering/comments/1enbf9w/some_data_storage_questions_with_bronzesilver/,False,False,False,False,"Hi there,
+
+I have been exploring databricks and DE via a Udemy Course. I am venturing on my own to work on my own project with Mars Rover data.
+
+My question(s) are:
+
+My data has some a few nested structures in its schema.
+
+i.e. the data can be:
+
+'photos.rover.name '
+
+If I go too deep and explode, I end up with duplicate and ambiguous column names because I also have:
+
+'photos.camera.name'
+
+I currently loaded it, exploded, and dropped ""photos"", so I have all the top level columns to query.  Is this too much for bronze stage?  
+
+Should it just have gone in to an S3 bucket directly from the API as a JSON for bronze? 
+
+Then I extract from bronze and do all of the above for silver?
+
+Then I explode further and create and join tables properly for gold?  
+I feel like I'm mixing stages.
+
+Also, for these different stages, do I just create a separate location within the same S3 bucket? Or do I create separate buckets for each stage?
+
+Thanks for the advice!
+
+"
+1en4oth,Azure Synapse - using output from one REST call as property list for another?,2,0,Apprehensive-Box281,2024-08-08 12:29:34,0,https://www.reddit.com/r/dataengineering/comments/1en4oth/azure_synapse_using_output_from_one_rest_call_as/,False,False,False,False,"In azure synapse I'm calling REST against a 3rd party tool. Our team adds properties to this tool all the time, and I'm experimenting with making the query dynamic so that I don't have to keep updating the pipeline.
+
+First, I make a rest api call to and endpoint that gives me a table of all the properties I can use in another endpoint - lets call this ""properties"". I stick the query result in a staging table in the SQL pool.
+
+I then use a stored procedure to string agg all the values from one column (property name) in that table into a big ass concatenated string and store that in a table that is one column one row. Lets call that AllPropertiesString.
+
+In a second pipeline, I use a lookup to pull AllPropertiesString and stick it on the relativeURL as a suffix.
+
+
+
+I feel like there has to be a more elegant way of doing this. My method feels caveman-ish.
+
+Any ideas?"
+1en2hzf,UCX Databricks ,2,0,Glum_Attorney_6755,2024-08-08 10:29:39,0,https://www.reddit.com/r/dataengineering/comments/1en2hzf/ucx_databricks/,False,False,False,False,"Did anyone use UCX for UC migration and what’s their take on it?
+"
+1en2cpq,Bridging Backend and Data Engineering: Communicating Through Events,2,0,der_gopher,2024-08-08 10:20:03,0,https://medium.com/@pliutau/bridging-backend-and-data-engineering-communicating-through-events-f699d6200bb1,False,False,False,False,
+1enkgxz,any course for multiple architecture design patterns for data engineering ,1,2,Witty_Inspection_554,2024-08-08 23:19:58,1,https://www.reddit.com/r/dataengineering/comments/1enkgxz/any_course_for_multiple_architecture_design/,False,False,False,False,I have seen many design patterns for system design and architecture . its but unfortunately not specialized particularly for system design for data engineering course where they talk about multiple and efficient patterns . All I see is simple pattern and no major engineering involved . Just transport data A to B . 
+1enketj,Has anyone used Preplaced for Dataengineering / Data Engineering ,0,1,Witty_Inspection_554,2024-08-08 23:17:19,0,https://www.reddit.com/r/dataengineering/comments/1enketj/has_anyone_used_preplaced_for_dataengineering/,False,False,False,False,"I'm completely new to data engineering development and struggle to balance family and work commitments, especially since my current job isn't in majorly in DE. I'm willing to invest in a guided DE course that can help me land a good job in the field, ideally in a challenging environment where I can work with big telecom companies handling massive datasets. I believe this will lead to more problems to solve, more learning opportunities, and ultimately, more earnings. I need a course that's highly guided and personalized, where I can learn Python, Spark, and SQL, with progress tracking and support along the way."
+1emy3wj,Can I become a DE with a business and data analytics BA?,0,2,cailloudragonballs,2024-08-08 05:39:21,0,https://www.reddit.com/r/dataengineering/comments/1emy3wj/can_i_become_a_de_with_a_business_and_data/,False,False,False,False,I have 2 years work experience as a data analyst working for a small consulting company working mostly for pharmaceutical companies. I have built dash boards and use python quite regular to perform data analysis. 
