@@ -5,17 +5,10 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="f17cdd31-39c0-4088-8f52-c0958fac5054" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/.idea/Reddit_Data_Pipeline_Engineering.iml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/inspectionProfiles/profiles_settings.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/modules.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/config/config.conf" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/dags/reddit_dag.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/etls/reddit_etl.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/pipelines/reddit_pipeline.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/utils/constants.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/config/config.conf" beforeDir="false" afterPath="$PROJECT_DIR$/config/config.conf" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/logs/dag_processor_manager/dag_processor_manager.log" beforeDir="false" afterPath="$PROJECT_DIR$/logs/dag_processor_manager/dag_processor_manager.log" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/logs/scheduler/2024-08-09/reddit_dag.py.log" beforeDir="false" afterPath="$PROJECT_DIR$/logs/scheduler/2024-08-09/reddit_dag.py.log" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -83,7 +76,7 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1723077349513</updated>
-      <workItem from="1723077351638" duration="16057000" />
+      <workItem from="1723077351638" duration="17279000" />
     </task>
     <servers />
   </component>
