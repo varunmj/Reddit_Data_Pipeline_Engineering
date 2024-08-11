@@ -5,10 +5,14 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="f17cdd31-39c0-4088-8f52-c0958fac5054" name="Changes" comment="">
+      <change afterPath="$PROJECT_DIR$/etls/aws_etl.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/pipelines/aws_s3_pipeline.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/config/config.conf" beforeDir="false" afterPath="$PROJECT_DIR$/config/config.conf" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/dags/reddit_dag.py" beforeDir="false" afterPath="$PROJECT_DIR$/dags/reddit_dag.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/logs/dag_processor_manager/dag_processor_manager.log" beforeDir="false" afterPath="$PROJECT_DIR$/logs/dag_processor_manager/dag_processor_manager.log" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/logs/scheduler/2024-08-09/reddit_dag.py.log" beforeDir="false" afterPath="$PROJECT_DIR$/logs/scheduler/2024-08-09/reddit_dag.py.log" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/logs/scheduler/latest" beforeDir="false" afterPath="$PROJECT_DIR$/logs/scheduler/latest" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -76,7 +80,7 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1723077349513</updated>
-      <workItem from="1723077351638" duration="17279000" />
+      <workItem from="1723077351638" duration="19105000" />
     </task>
     <servers />
   </component>
