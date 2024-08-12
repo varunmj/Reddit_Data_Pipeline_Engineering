@@ -29,11 +29,10 @@ POST_FIELDS = (
     'num_comments',
     'author',
     'created_utc',
-    'upvote_ratio',
     'url',
     'over_18',
     'edited',
     'spoiler',
     'stickied',
-    'selftext'
+
 )

@@ -1,6 +1,7 @@
-from utils.constants import AWS_ACCESS_KEY_ID, AWS_ACCESS_KEY
 import s3fs
-def connect_to_s3:
+from utils.constants import AWS_ACCESS_KEY_ID, AWS_ACCESS_KEY
+
+def connect_to_s3():
     try:
         s3 = s3fs.S3FileSystem(anon=False,
                                key =AWS_ACCESS_KEY_ID,
@@ -24,7 +25,7 @@ def create_bucket_if_not_exist(s3:s3fs.S3FileSystem,bucket:str):
 
 def upload_to_s3(s3:s3fs.S3FileSystem,file_path:str,bucket:str,s3_file_name:str):
     try:
-        s3.put(file_path, bucket+'/raw' +s3_file_name)
+        s3.put(file_path, bucket+'/raw/' +s3_file_name)
         print('File uploaded to s3')
     except FileNotFoundError:
         print('The File was not found')
