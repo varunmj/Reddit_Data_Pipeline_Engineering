@@ -30,7 +30,7 @@ By using modern data engineering tools and AWS services, this pipeline ensures s
  
 ## Architecture
  
-![Architecture Diagram](./RedditDataEngineering.png)
+![Architecture Diagram](./Reddit.jpeg)
  
 - **Reddit API**: The source of raw data, providing access to Reddit posts and comments.
 - **Apache Airflow & Celery**: Handles task orchestration and distribution, ensuring smooth ETL operation.
